@@ -8,12 +8,12 @@ weight: 500
 terminology_link: reference-terminology.html
 ---
 
-For Cloudify to be able to deploy your application it reads the uploaded blueprint YAML (the logical representation) and manifests a model we call a `deployment`. A deployment is a "Technical" drilled down representation of your application. For instance, if a blueprint describes a single server node that is defined to deploy multiple instances, the deployment will comprise the instances themselves provided with their unique identifiers.
+In order for Cloudify to deploy your application, it reads the uploaded blueprint YAML (the logical representation) and manifests a model called a _deployment_. A deployment is a "technical" drilled-down representation of your application. For example, if a blueprint describes a single server node that is defined to deploy multiple instances, the deployment will comprise the instances themselves provided with their unique identifiers.
 
 
 ## Creating a Deployment via the CLI
 
-To create a deployment using Cloudify's CLI execute:
+To create a deployment using the Cloudify CLI execute:
 
 {{< gsHighlight  bash >}}
 cfy deployments create -b <BLUEPRINT_NAME> -d <DEPLOYMENT_NAME> --inputs </path/to/your/inputs.yaml​>
@@ -22,18 +22,18 @@ cfy deployments create -b <BLUEPRINT_NAME> -d <DEPLOYMENT_NAME> --inputs </path/
 
 ## Creating a Deployment via the Web UI
 
-To Create a new deployment, go to the blueprints screen, choose a blueprint and click on the button `Create Deployment`:<br/>
-![Create deployment button]({{< img "ui/ui-create-deployment.jpg" >}})
+1. In the blueprints screen, select a blueprint and click **Create Deployment**   <br/>
+   ![Create deployment button]({{< img "ui/ui-create-deployment.jpg" >}})
 
-A create deployment dialog will open.<br/>
+2. Enter the name of the deployment and, optionally, specify the raw input parameters.
 
-Next, please fill out the deployment name and insert raw input parameters (optional), then click on the `create` button:<br/>
-![Create deployment box]({{< img "ui/ui-create-deployment-box.jpg" >}})
+3. Click **create**.   <br/>
+   ![Create deployment box]({{< img "ui/ui-create-deployment-box.jpg" >}})
 
-After creating the deployment, you will be directed to the deployment's page to follow the initialization stage:<br/>
+After creating the deployment, you are redirected to the deployment's page to track the initialization stage.<br/>
 ![Deployment initialize]({{< img "ui/ui-initialize-deployment.jpg" >}})
 
-Once the initialization is complete, you will be able to start using the deployment and execute workflows.<br/>
+After initialization is complete, you can start using the deployment and execute workflows.<br/>
 ![Deployment ready to use]({{< img "ui/ui-deployment-ready.jpg" >}})
 
 # Create a Deployment
@@ -41,7 +41,7 @@ Once the initialization is complete, you will be able to start using the deploym
 Picking up from Step 5, [Uploading a Blueprint]({{< relref "manager/upload-blueprint.md" >}}), we'll now create the deployment for our blueprint using the command line.
 
 {{% gsNote title="Note" %}}
-Creating a Deployment doesn't actually create any resources, it simply generates a "Physical" representation of your application from the "Logical" (Blueprint) representation and stores in the database. Technically, it is a virtual environement on the manager.
+Creating a Deployment doesn't actually create any resources, it simply generates a "Physical" representation of your application from the "Logical" (Blueprint) representation and stores it in the database. Technically, it is a virtual environement on the manager.
 {{% /gsNote %}}
 
 First create an inputs file (just like our Manager Blueprint's inputs dialog):
