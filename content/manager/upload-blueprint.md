@@ -36,22 +36,16 @@ $ cfy blueprints upload -b BLUEPRINT_ID -p BLUEPRINT_FILE_LOCATION
 
 ## Uploading a Blueprint via the Cloudify Web Interface
 
-If you are a Premium user, you can upload a pre-packaged Blueprint archive, such as *.tar, *.tar.gz, *.tar.bz, *.zip., using the Cloudify Manager UI.
+If you are a Premium version user, you can upload a pre-packaged blueprint archive, such as *.tar, *.tar.gz, *.tar.bz, *.zip., using the Cloudify Manager UI.
 
 1. On the **Blueprints** widget, click **Upload**.   
-
    ![The blueprint upload button]({{< img "ui/ui_upload_blueprint_button.png" >}})
-
 2. In the blueprints dialog, either specify the URL of the blueprint archive, or select it from the filesystem.  
-
    ![The blueprint upload dialog]({{< img "ui/ui-upload-blueprint.png" >}})
-
 3. Specify a distinguishing name for the blueprint.   
    For example, you might want to specify one instance of the blueprint upload as `blueprint-template` and another as a `blueprint-with-input`.
-
 4. (Optional) Specify the YAML filename.   
    This field refers to to the *.yaml file that contains the application topology. If left blank, the default `blueprint.yaml` file is used. 
-
 5. Click **Upload** to upload the upload the blueprint package.
 
 
