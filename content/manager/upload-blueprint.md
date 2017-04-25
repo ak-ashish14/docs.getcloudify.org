@@ -38,25 +38,22 @@ $ cfy blueprints upload -b BLUEPRINT_ID -p BLUEPRINT_FILE_LOCATION
 
 If you are a Premium user, you can upload a pre-packaged Blueprint archive, such as *.tar, *.tar.gz, *.tar.bz, *.zip., using the Cloudify Manager UI.
 
-The **upload blueprint** button is located on the **Blueprints** tab of the UI.
+1. On the **Blueprints** widget, click **Upload**.   
 
-![The blueprint upload button]({{< img "ui/ui_upload_blueprint_button.png" >}})
+   ![The blueprint upload button]({{< img "ui/ui_upload_blueprint_button.png" >}})
 
-When you click **Upload Blueprint**, the upload dialog appears.
+2. In the blueprints dialog, either specify the URL of the blueprint archive, or select it from the filesystem.  
 
-You can either specify the path to the blueprint archive, or select it from the filesystem by clicking the Add `+` button:
+   ![The blueprint upload dialog]({{< img "ui/ui-upload-blueprint.png" >}})
 
-![The blueprint upload dialog]({{< img "ui/ui-upload-blueprint.png" >}})
+3. Specify a distinguishing name for the blueprint.   
+   For example, you might want to specify one instance of the blueprint upload as `blueprint-template` and another as a `blueprint-with-input`.
 
-The `Blueprint ID` field is mandatory.
+4. (Optional) Specify the YAML filename.   
+   This field refers to to the *.yaml file that contains the application topology. If left blank, the default `blueprint.yaml` file is used. 
 
-The `Blueprint filename` field is optional and refers to the *.yaml file that contains the application topology. If left blank, the default `blueprint.yaml` file will be used. To override, specify the name of the YAML file to be used.
+5. Click **Upload** to upload the upload the blueprint package.
 
-After all the mandatory fields are completed, the `Save` button becomes active.
-
-![The user can enter a custom blueprint name]({{< img "ui/ui-upload-blueprint-with-input.png" >}})
-
-After you click `Save`, the dialog box to be grayed-out until the blueprint file is fully uploaded to Cloudify. After the upload is complete, you are redirected to the blueprint's page.
 
 ## Uploading a Blueprint via the Command Line
 
