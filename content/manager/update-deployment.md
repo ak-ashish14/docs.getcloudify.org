@@ -12,10 +12,10 @@ With Cloudify, you can update a deployment that was previously [created from a b
 The contents of the deployment update must be described in a [yaml blueprint file]({{< relref "blueprints/overview.md" >}}), just as any application in Cloudify. Using the example described in the introduction, the updated application blueprint would include a new database type, some new node templates of the new database type, and some new relationships that represent how these new nodes connect to the existing architecture.
 
 ### Using the Web UI to Update a Deployment
-In order to update through the Web UI - open the deployment in the console, and under execute workflow choose update. Provide the new blueprint, leading yaml file, and whether to run install/uninstall or your own custom workflow. The operation will then take place, and be reflected in the topology view, nodes, etc.
+If you are a Premium user you can update a deployment from the Cloudify Web interface.  On the **Deployments** tab, open the deployment, and under execute workflow select **update**. Provide the new blueprint, leading yaml file, and whether to run install/uninstall or your own custom workflow. The operation will then take place, and be reflected in the topology view, nodes, etc.
 
 ### Using the CLI to Update a Deployment
-One quick way to update your deployment with Cloudify is using the CLI. Another way, perhaps more 'visual' is using the Cloudify UI. Updating a deployment via the CLI is quite reminiscent of uploading a blueprint or creating a deployment. You'll need a blueprint file describing your deployment update. That blueprint can be uploaded directly by supplying a local file path, or it can be uploaded as an archive.
+One quick way to update your deployment with Cloudify is to use the CLI. Another way, perhaps more 'visual' is using the Cloudify UI. Updating a deployment via the CLI is quite reminiscent of uploading a blueprint or creating a deployment. You'll need a blueprint file describing your deployment update. That blueprint can be uploaded directly by supplying a local file path, or it can be uploaded as an archive.
 #### via a blueprint file
 ```shell
 cfy deployments update -d ID_OF_DEPLOYMENT_TO_UPDATE -p PATH_TO_BLUEPRINT
