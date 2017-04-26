@@ -25,16 +25,16 @@ cfy executions start -w <WORKFLOW_NAME> -d <DEPLOYMENT_NAME>
 {{< /gsHighlight >}}
 
 
-## Executing a Workflow via the Web UI
+## Executing a Workflow via the Cloudify Web UI
 
-1. Navigate to the relevant `Deployment`.   
+1. Navigate to the relevant deployment on the Deployments widget.   
    ![workflows1]({{< img "ui/ui-workflows1.png" >}})
 
-2. Select the required `Workflow` from the dropdown.   
-   Note that, until a workflow is selected, the **run execution** button is disabled.<br>
+2. Select the required workflow from the dropdown adjacent to the relevant deployment.   
    ![workflows2]({{< img "ui/ui-workflows2.png" >}})
 
-3. Click **run execution** to start the workflow execution.   
+3. Enter the required values and click **Execute** to start the workflow execution.   
+   You must supply the `node_instance_id` value.
    ![workflows3]({{< img "ui/ui-workflows3.png" >}})<br>
    After **run execution** is clicked, the progress spinner is displayed. You can cancel the execution by clicking the **X** button.<br>
    ![workflows4]({{< img "ui/ui-workflows4.png" >}})

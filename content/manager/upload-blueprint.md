@@ -40,7 +40,7 @@ If you are a Premium version user, you can upload a pre-packaged blueprint archi
 
 1. On the **Blueprints** widget, click **Upload**.   
    ![The blueprint upload button]({{< img "ui/ui_upload_blueprint_button.png" >}})
-2. In the blueprints dialog, either specify the URL of the blueprint archive, or select it from the filesystem.  
+2. In the Upload blueprint dialog, either specify the URL of the blueprint archive, or select it from the filesystem.  
    ![The blueprint upload dialog]({{< img "ui/ui-upload-blueprint.png" >}})
 3. Specify a distinguishing name for the blueprint.   
    For example, you might want to specify one instance of the blueprint upload as `blueprint-template` and another as a `blueprint-with-input`.
